@@ -13,12 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/', function () {
+    $pasta = config('pasta');
+    return view('home',
+        ['array' => $pasta]);
 });
 
 Route::get('/product/{id}', function($id) {
+    $pasta = config('pasta');
     return view('product',
-        ['idProduct' => $id]
+        ['idProduct' => $id, 'array' => $pasta]
     );
 });

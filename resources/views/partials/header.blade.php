@@ -1,6 +1,8 @@
-<img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
+<div class="logo">
+  <img src="{{asset('images/logo.png')}}">
+</div>
 
-<ul>
+<ul class="header-list">
   <li>HOME</li>
   <li>PRODOTTI</li>
   <li>NEWS</li>
